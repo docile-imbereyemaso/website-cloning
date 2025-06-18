@@ -1,117 +1,211 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
-html{
-    scroll-behavior: smooth;
+html {
+  scroll-behavior: smooth;
 }
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    list-style: none;
-    text-decoration: none;
-    font-family: "Roboto", sans-serif;
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  font-family: "Roboto", sans-serif;
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
-  font-variation-settings:
-    "wdth" 100;
+  font-variation-settings: "wdth" 100;
 }
+
 .first-container {
-  position: relative;
-  z-index: 1;
-}
-.first-container::before {
-  content: "";
-  position: absolute;
-  inset: 0;
- background-image: url(images/bg-image.jpeg);
-    background-position: center;
-    background-size: cover;
-    height: 90vh;
-    background-repeat: no-repeat;
-    filter: brightness(80%);
-  z-index: -1;
+  background-image: linear-gradient(
+      rgba(0, 0, 0, 0.3),
+      rgba(0, 0, 0, 0.3)
+    ),
+    url(images/bg-image.jpeg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 90vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
 }
 
-.navbar{
-    background-color: white;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    padding: 15px;
+.navbar {
+  background-color: white;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 15px;
 }
-.nav-link{
-    display: flex;
-    gap:20px;
-    align-items: center;
+
+.nav-link {
+  display: flex;
+  gap: 20px;
+  align-items: center;
 }
+
+.nav-link li a {
+  color: black;
+  font-weight: 500;
+  font-size: 14px;
+}
+
 .nav-link li a:hover {
-   color: blue;
-}
-.nav-link li a{
-    color: black;
-    font-weight: 500;
-    font-size: 14px;
-
+  color: blue;
 }
 
-.main-link{
-    border: 1px solid rgb(240, 233, 233);
-    padding: 5px;
-    border-radius: 10px;
-    transition: background-color 0.3s ease-in-out;
-}
-.main-link:hover{
-    background-color: #b8e6fe;
-}.main-link a:hover{
-     color: black !important;
+.main-link {
+  border: 1px solid rgb(240, 233, 233);
+  padding: 5px;
+  border-radius: 10px;
+  transition: background-color 0.3s ease-in-out;
 }
 
-.fa-download{
-color: blue;
+.main-link:hover {
+  background-color: #b8e6fe;
 }
-.location-section{
+
+.main-link a:hover {
+  color: black !important;
+}
+
+.fa-download {
+  color: blue;
+}
+
+.location-section {
   display: flex;
   flex-direction: column;
   justify-content: center;
   padding: 200px;
-  min-height: 100vh;
   gap: 20px;
 }
-.section-paragraph{
-   
-    font-size: 40px;
-    color: white;
-    
-}
-.section{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    width: 80vw;
-    background-color: rgb(245, 240, 240);
-    border-radius: 10px;
-    padding: 20px;
 
-    
+.section-paragraph {
+  font-size: 40px;
+  color: white;
 }
-.container{
+
+.section {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 80vw;
+  background-color: rgb(245, 240, 240);
+  border-radius: 10px;
+  padding: 20px;
+  flex-wrap: wrap;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background-color: white;
+  padding: 15px 70px;
+  border-radius: 10px;
+  border: 1px solid gray;
+}
+
+.section-btn {
+  padding: 20px 30px;
+  border-radius: 100px;
+  border: none;
+  background: blue;
+  color: white;
+  font-size: 20px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.main-section{
+    padding: 30px 80px ;
+}
+.message-section{
+    background-color: #020618;
     display: flex;
+    color: white;
+    font-weight: 400;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    border-radius: 10px;
+}
+.message-leftside{
+    display: flex;
+    justify-content: center;
     align-items: center;
     gap: 10px;
-    background-color: white;
-    padding: 15px 70px;
-    border-radius: 10px;
-    border: 1px solid gray;
-    
 }
-.section-btn{
-    padding: 20px 30px;
-    border-radius: 100px;
+.message-icon{
+    background-color: #7bf1a8;
+    padding: 10px;
+    border-radius: 100%;
+    color: #020618 !important;
+}
+.message-section button{
+    padding: 5px;
+    border-radius: 10px;
+    background-color: #155dfc;
     border: none;
-    background: blue;
     color: white;
+    font-weight: 600;
+}
+.booking{
+    padding-top: 20px;
+    display: flex;
+    gap: 10px;
+}
+.booking-container img{
+    width: 170px;
+    height: 100%;
+    object-fit: cover;
+     border-top-right-radius: 10px;
+     border-bottom-right-radius: 10px;
+}
+.booking-container{
+    background-color: #155dfc;
+    color: white;
+    font-weight: 600;
+    display: flex;
+    border-radius: 10px;
+
+}
+.book-content{
+    padding: 10px;
     font-size: 20px;
+   line-height: 1.8;
+}
+.accomodations{
+    margin-top: 30px;
+}
+.accomodation{
+    display: flex;
+    gap: 10px;
+}
+.acc-images{
+    width: 250px;
+    height: 250px;
+    position: relative;
+}
+.acc-images img{
+    width: 100%;
+    height: 100%;
+    aspect-ratio: 1;
+    border-radius: 10px;
+}
+.acc-images h3{
+    position: absolute;
+    bottom: 40px;
+    left: 10px;
+    color: white;
+    font-weight: 700;
+}
+.accomodations p{
+    color: #020618;
+    margin-bottom: 15px;
     font-weight: 500;
+    font-size: 25px;
 }
