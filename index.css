@@ -1,0 +1,64 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+html{
+    scroll-behavior: smooth;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+.first-container{
+    background-image: url(images/bg-image.jpeg);
+    background-position: center;
+    background-size: cover;
+    height: 90vh;
+    background-repeat: no-repeat;
+    
+}
+.navbar{
+    background-color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 15px;
+}
+.nav-link{
+    display: flex;
+    gap:20px;
+    align-items: center;
+}
+.nav-link li a:hover {
+   color: blue;
+}
+.nav-link li a{
+    color: black;
+    font-weight: 500;
+    font-size: 14px;
+
+}
+
+.main-link{
+    border: 1px solid rgb(240, 233, 233);
+    padding: 5px;
+    border-radius: 10px;
+    transition: background-color 0.3s ease-in-out;
+}
+.main-link:hover{
+    background-color: #b8e6fe;
+}.main-link a:hover{
+     color: black !important;
+}
+
+.fa-download{
+color: blue;
+}
