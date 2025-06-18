@@ -2,6 +2,7 @@
 
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 * {
@@ -310,3 +311,68 @@ font-weight: 500;
     color: white;
     font-weight: 600;
 }
+.renting{
+    background-image: url(images/renting.jpeg);
+    background-position: center;
+    background-size: cover;
+    height: 80vh;
+    margin-top: 20px;
+    border-radius: 10px;
+    padding: 50px 40px;
+}
+.renting-container{
+    background-color: white;
+    padding: 20px;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    border-radius: 10px;
+    height: 400px;
+    color: #020618;
+}
+.renting-container p{
+    font-weight: 300;
+    margin-bottom: 20px;
+}
+.renting-container button{
+    padding: 10px;
+    width: 300px;
+    border: none;
+    background-color: #155dfc;
+    color: white;
+    font-weight: 700;
+    font-size: 19px;
+    border-radius: 20px;
+    transition: background-color 0.3s ease-in-out;
+}
+.renting-container button:hover{
+    background-color: #193cb8;
+}
+.main-content {
+   padding-top: 20px;
+    color: #020824;
+    text-align: justify;
+}
+.main-content p{
+    margin-top: 10px;
+    font-weight: 400;
+}
+.main-content h1{
+    font-weight: 600;
+}
+.ideas-container{
+    padding: 20px 0;
+    color: #020824;
+}
+.ideas-container h1{
+    margin: 10px 0;
+}
+.ideas-container ul li {
+    display: flex;
+    justify-content: space-between; 
+    cursor: pointer;
+    font-size: 19px;
+    margin-bottom: 10px;
+    font-weight: 600;
+} 
